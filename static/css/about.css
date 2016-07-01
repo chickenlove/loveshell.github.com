@@ -1,0 +1,135 @@
+.navigation{
+    position: relative;
+    background: rgba(255,255,255,1);
+    padding: 16px 0;
+    color: #59708B;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.navigation .logo{
+    background: url(../images/logoHeaderColor.png) no-repeat 0 50%;
+}
+.navigation .navbar-nav > li > a{
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navigation .navbar-nav > li > a{
+    color: #59708B;
+}
+
+
+.navigation .navbar-nav > li > a:hover,
+.navigation .nav .open > a,
+.navigation .navbar-nav > li.active > a{
+    color: #459FD4;
+}
+.navigation .navbar-nav > li > .dropdown-menu{
+    margin-top: 18px;
+    border-top: 0;
+}
+.navigation .navbar-nav > li > .dropdown-menu:before{
+    display: none;
+}
+
+.navigation .button.button-transparent{
+    border-color: #30323F;
+}
+
+
+
+
+.about{
+    padding: 50px 0;
+}
+.about .nav-tabs{
+    border-bottom: 0;
+    background: #F4F4F4;
+    min-height: 280px;
+}
+.about .nav-tabs>li{
+    border-bottom: 1px dashed #ddd;
+    line-height: 2.5em;
+    padding: 3px 0;
+    float: none;
+}
+.about .nav-tabs a{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    TEXT-DECORATION: none;
+}
+
+.about .nav-tabs > li > a,
+.about .nav-tabs > li > a:hover,
+.about .nav-tabs > li.active > a, .about .nav-tabs > li.active > a:hover, .about .nav-tabs > li.active > a:focus{
+    border: none;
+}
+
+.about .title{
+    font-size: 36px;
+    color: #333;
+    font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(51, 51, 51);
+    padding: 0 0 18px;
+    margin: 0 0 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-list ol{
+    padding: 0;
+    margin: 0;
+}
+.contact-list li{
+    font-size: 16px;
+    line-height: 2em;
+    padding: 0;
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.fw-bottom-line {
+    border-bottom: 1px solid #bbb;
+}
+.fw-p {
+    padding: 25px;
+}
+.jiejuefangan ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.jiejuefangan li {
+    list-style-type: none;
+}
+.jiejuefangan h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.bigdata .item{
+    margin: 10px auto;
+    border-bottom: 1px solid #bbb;
+    clear: both;
+    height: 300px;
+}
+.bigdata .title-icon{
+    margin-right: 15px !important;
+}
+.bigdata .onehalf{
+    width:48%;
+    float:left;
+    margin-bottom: 60px;
+}
+.bigdata h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.bigdata ul li {
+    margin-bottom: 10px;
+}

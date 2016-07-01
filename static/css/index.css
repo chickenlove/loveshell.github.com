@@ -1,0 +1,57 @@
+.banner ul,
+.banner li{
+    margin: 0;
+    padding: 0;
+}
+.banner img{
+    width: 100%;
+}
+.banner-info{
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    color: #aaa;
+    text-align: center;
+}
+
+
+
+/* grids */
+.grids{
+    padding: 3em 0;
+    text-align: center;
+}
+.grids .cdn-pic{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    background: url(../images/image-sprit.png) no-repeat -333px 6px;
+}
+.grids img{
+    display: inline-block;
+    background: #EEE;
+    padding: 5px;
+}
+.grids h3{
+    font-size: 2em;
+}
+.grids p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+    color: #777;
+    line-height: 1.5em;
+    margin: 0.5em auto 0.8em auto;
+    width: 90%;
+}
+.grids .button{
+    color: #D63B37;
+    font-size: 0.875em;
+    text-transform: uppercase;
+    padding: 1em 1.5em;
+    border: 1px solid #EEE;
+    display: inline-block;
+}
+
+

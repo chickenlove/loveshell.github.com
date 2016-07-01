@@ -1,37 +1,158 @@
----
-layout: page
-title: 首页
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>北京三矛科技有限公司-新一代安全加速服务提供商</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
 
-<br>
-<div class="row">
-  <div class="col-md-12">
-    <div class="panel panel-primary">
-      <div class="panel-heading">{{ site.locals.newest }}</div>
-      {% for post in paginator.posts %}
-        <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-          {{post.title}}
-          <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-        </a>
-      {% endfor %}
+<div class="header">
+    <div class="navigation -fx-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <h1 class="logo"><a href="index.html">LOGO</a></h1>
+            </div>
+            <div class="navbar">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.html">首页</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"  data-hover="true" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          产品服务
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="product.html#1">企业威胁感知系统</a></li>
+                          <li><a href="product.html#3">云CDN解决方案</a></li>
+                          <li><a href="product.html#4">大数据解决方案</a></li>
+                        </ul>
+                      </li>
+
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"   data-hover="true" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          关于我们
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="about.html#home">公司介绍</a></li>
+                            <li><a href="about.html#profile">联系我们</a></li>
+                        </ul>
+                      </li>
+
+                    </li>
+                    <li><a href="">登录</a></li>
+                    <li><a href="" class="button button-transparent">免费体验</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-  {% for cate in site.cates %}
-    <div class="col-md-12">
-      <div class="panel panel-primary">
-        <div class="panel-heading">{{ cate }}</div>
-        {% for tag in site.tags %} 
-          {% if tag[0] == cate %}
-            {% for post in tag[1] %}
-              <a  href='{{ post.url }}' class="list-group-item pjaxlink clearfix">
-                {{post.title}}
-                <span class="badge">{{ post.date | date:"%Y年%m月%d日" }}</span>
-              </a>
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </div>
+
+    <div class="banner">
+        <ul class="bxslider">
+            <li><img src="static/images/temp/1.jpg"/>
+            <div class="banner-info">
+                <h2>深度安全威胁分析</h2>
+                <p>
+			资深安全专家为您提供最专业安全的服务
+                </p>
+            </div>
+            </li>
+            <li><img src="static/images/temp/2.jpg"/>
+            <div class="banner-info">
+                <h2>让您的业务更快更安全</h2>
+                <p>
+                    不要让几分之一秒的时间影响到您的业务目标
+                </p>
+            </div>
+            </li>
+            <li>
+                <img src="static/images/temp/3.jpg"/>
+                <div class="banner-info">
+                    <h2>对海量IT数据实现类似 Google 的搜索</h2>
+                    <p>
+                        海量数据分析，从没有如此简单
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
-  {% endfor %}
 </div>
- 
+
+
+<div class="content container">
+    <div class="row grids">
+        <div class="col-xs-4">
+            <img style="background: #fff;" src="static/images/earth-logo.png" height="80px" title="icon-name">
+            <h3>企业威胁感知系统</h3>
+            <p>智能的资产发现与自动化威胁建模,从而挖掘海量业务、域名、服务及应用下的安全漏洞，运维风险和安全威胁</p>
+            <a href="product.html#1" class="button">了解详情</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="cdn-pic"></a>
+            <h3>云CDN解决方案</h3>
+            <p>助您快速搭建一套成熟、稳定、超前的CDN系统，节约时间、成本的同时助力业务快速发展</p>
+            <a href="product.html#3" class="button">了解详情</a>
+        </div>
+        <div class="col-xs-4">
+            <img style="background: #fff;" src="static/images/dns.png" height="80px" title="icon-name">
+            <h3>大数据解决方案</h3>
+            <p>帮助我们的客户进行数据采集，存储，分析，维护和支持整个大数据系统。可以让我们客户更专注于分析而不是管理</p>
+            <a href="product.html#4" class="button">了解详情</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="footer">
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <h3>解决方案</h3>
+            <ul>
+                <li><a href="product.html#1">企业威胁感知系统</a></li>
+                <li><a href="product.html#3">云CDN解决方案</a></li>
+                <li><a href="product.html#4">大数据解决方案</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3">
+            <h3>关于</h3>
+            <ul>
+                <li><a href="about.html#home">公司介绍</a></li>
+                <li><a href="about.html#profile">联系我们</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3">
+            <h3>联系我们</h3>
+            <ul>
+                <li><a href="">新浪微博</a></li>
+                <li><a href="">邮箱</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3">
+            <a href="/"><img src="static/images/logoHeaderColor.png" alt=""></a>
+            <br>
+            <br>
+            <br>
+            <p>Copyright © 2015</p>
+            <p>北京三矛科技有限公司</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="static/js/jquery.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/dropdownHover.js"></script>
+<script src="static/js/common.js"></script>
+<script src="static/components/bxslider/jquery.bxslider.min.js"></script>
+<link href="static/components/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+<script>
+$(document).ready(function(){
+    $('.bxslider').bxSlider();
+});
+</script>
+</body>
+</html>
